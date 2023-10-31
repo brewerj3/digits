@@ -31,4 +31,4 @@ class ContactCollection {
  * The singleton instance of the ContactCollection.
  * @type {ContactCollection}
  */
-export const Contact = new ContactCollection();
+export const Contacts = new ContactCollection();
