@@ -7,7 +7,7 @@ import { Contacts } from '../../api/contact/Contact';
 import { Notes } from '../../api/note/Note';
 import LoadingSpinner from '../components/LoadingSpinner';
 
-/* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/* Renders a table containing all of the Contact documents. Use <ListContacts> to render each row. */
 const ListContacts = () => {
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { ready, contacts, notes } = useTracker(() => {
