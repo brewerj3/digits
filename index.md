@@ -1,2 +1,5 @@
-<img src="doc/Landing.png" alt="Landing page">
+###
+Digits application
+
+<img src="doc/landing.png" alt="Landing page">
 
