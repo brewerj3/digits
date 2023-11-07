@@ -36,7 +36,7 @@ Contact.propTypes = {
     _id: PropTypes.string,
   }).isRequired,
   notes: PropTypes.shape({
-    note: PropTypes.string,
+    note: PropTypes.arrayOf(PropTypes.string),
     contactId: PropTypes.string,
     owner: PropTypes.string,
     createdAt: PropTypes.instanceOf(Date),
