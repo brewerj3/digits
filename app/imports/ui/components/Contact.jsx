@@ -17,6 +17,7 @@ const Contact = ({ contact, notes }) => (
       <Card.Text>{contact.description}</Card.Text>
       <AddNote owner={contact.owner} contactId={contact._id} />
       <ListGroup variant="flush">
+        {/* eslint-disable-next-line react/prop-types */}
         {notes.map((note) => <Note key={note._id} note={note} />)}
       </ListGroup>
       <Link to={`/edit/${contact._id}`}>Edit</Link>
@@ -36,7 +37,7 @@ Contact.propTypes = {
     _id: PropTypes.string,
   }).isRequired,
   notes: PropTypes.shape({
-    note: PropTypes.arrayOf(PropTypes.string),
+    note: PropTypes.string,
     contactId: PropTypes.string,
     owner: PropTypes.string,
     createdAt: PropTypes.instanceOf(Date),
